@@ -31,5 +31,4 @@ int mian()
         add = add + ret;
     }
     printf("%d\n",add);
-    
 }

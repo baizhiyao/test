@@ -16,17 +16,30 @@ int main()
     // %lf - 打印double类型的数据
     // 三目操作符
     
-    static int a=20,b=10;// static 可以修饰函数、局部变量和全局变量
-    // 修饰局部变量，局部变量变为全局变量
-    // 修饰全局变量，改变变量的外部链接属性
-    // 修饰函数，与修饰全局变量类似
-    int r = (a>b?a:b);
-    int c = ADD(a,b);
-    int* p = &a;
+    // static int a=20,b=10;// static 可以修饰函数、局部变量和全局变量
+    // // 修饰局部变量，局部变量变为全局变量
+    // // 修饰全局变量，改变变量的外部链接属性
+    // // 修饰函数，与修饰全局变量类似
+    // int r = (a>b?a:b);
+    // int c = ADD(a,b);
+    // int* p = &a;
     
-    printf("%d\n",p);
-    printf("%d\n",*p);
-    printf("%d\n",c);
-    printf("abcd\n");
+    // printf("%d\n",p);
+    // printf("%d\n",*p);
+    // printf("%d\n",c);
+    // printf("abcd\n");
+    int i,j;
+    int ret = 1;
+    int add = 0;
+    for(i = 1;i <= 10;i++)
+    {
+       ret = ret * i;
+        // for(j = 1;j <= i;j++)
+        // {
+        //     ret = ret * j;
+        // }
+        add = add + ret;
+    }
+    printf("%d\n",add);
     return 0;
 }
